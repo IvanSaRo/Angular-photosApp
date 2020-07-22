@@ -6,7 +6,7 @@ export class FileItem {
     public progress: number;
 
 
-    constructor( archive: FIle){
+    constructor( archive: File){
         this.archive = archive;
         this.archiveName = archive.name;
         this.isLoading = false;
