@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firestore-photos": {
+      "hosting": {
+        "photosApp": [
+          "firestore-photos"
+        ]
+      }
+    }
+  }
+}

@@ -8,6 +8,11 @@ import { PhotosComponent } from './components/photos/photos.component';
 import { LoadComponent } from './components/load/load.component';
 import { APP_ROUTES } from './app.routes';
 
+import { LoadImagesService } from './services/load-images.service';
+
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +22,12 @@ import { APP_ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTES
+    APP_ROUTES,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [
+    LoadImagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
