@@ -21,11 +21,10 @@ export class LoadComponent implements OnInit {
 
   loadImg(){
     this.loadImagesService.loadImgFirebase( this.archives );
-    
-    
-    
+    }
 
-   
-  
+  cleanArchives(){
+
+    this.archives = [];
   }
 }
