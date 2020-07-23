@@ -10,6 +10,8 @@ import { LoadImagesService } from '../../services/load-images.service';
 })
 export class LoadComponent implements OnInit {
 
+  overDrop = false;
+  s = "*'&ABCDabcde12345"
   archives: FileItem[] = [];
   
   constructor(public loadImagesService: LoadImagesService) { }
@@ -19,5 +21,11 @@ export class LoadComponent implements OnInit {
 
   loadImg(){
     this.loadImagesService.loadImgFirebase( this.archives );
+    
+    
+    
+
+   
+  
   }
 }

@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-md-4">
         <h3>Seleccione archivos</h3>
-        <div class="well drop-zone mt-3">
+        <div appNgDropFiles class="well drop-zone mt-3" [ngClass]="{ 'file-over': overDrop }" (mouseOver)="overDrop = $event">
             <h4>Deje caer el archivo aquí</h4>
             <img src="assets/drop-images.png" alt="drop-img">
         </div>
-
+        <!-- [disabled]="archives.length === 10" -->
     </div>
     <div class="col-md-8">
         <h4>Cargar archivos</h4>
