@@ -1,7 +1,7 @@
 export class FileItem {
     public archive: File;
-    public archiveName: String;
-    public url: String;
+    public archiveName: string;
+    public url: string;
     public isLoading: boolean;
     public progress: number;
 
